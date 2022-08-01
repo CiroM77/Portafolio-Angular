@@ -57,6 +57,10 @@ body {
 
 }
 
+#btn-ic {
+  margin-right: 20px;
+}
+
 #inicio-sesion{
 
 background-color: #fa3d04;
@@ -275,6 +279,10 @@ border-right: none;
     border-radius: 50%;
 }
 
+.col-text{
+  margin-top: 45px !important;
+}
+
 .col-text h4 {
     color: #ffffff;
 }
@@ -314,7 +322,7 @@ border-right: none;
   width: 100%;
   max-width: 800px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 30px;
   margin-bottom: 100px;
   padding: 30px;
   background-color: rgb(255, 255, 255, 0.3);
@@ -337,7 +345,10 @@ border-right: none;
   color: #bbb8b8;
 }
 
-
+#btn-crear{
+  margin-right: 280px;
+  margin-top: 50px;
+}
 
 /* HABILIDADES */
 
@@ -510,4 +521,31 @@ letter-spacing: 1.5px;
 
 .footer a:hover{
 opacity: 0.8;
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 600px) {
+  .container-banner {
+   width: 120%;
+  }
+  .details-footer ul{
+    margin-top: 0;
+  }
+
+  .details {
+    padding-right: 100px;
+  }
+
+  #btn-edit{
+    width: max-content;
+  }
+  #btn-del{
+    width: max-content;
+  }
+
+  .list-group {
+    flex-direction: row !important;
+  }
 }

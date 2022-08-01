@@ -16,6 +16,7 @@ import { PortafolioComponent } from './componentes/portafolio/portafolio/portafo
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { InterceptorService } from './servicios/interceptor.service';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
+import { CreateEduComponent } from './componentes/create-edu/create-edu.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { EducacionComponent } from './componentes/educacion/educacion.component'
     InicioSesionComponent,
     PortafolioComponent,
     EducacionComponent,
+    CreateEduComponent,
   ],
   imports: [
     BrowserModule,

@@ -8,7 +8,7 @@ import { map } from 'rxjs';
   providedIn: 'root'
 })
 export class AutenticacionService {
-  url="http://localhost:8070/login";
+  url="";
   currentUserSubject:BehaviorSubject<any>;
 
   constructor(private http:HttpClient) { 

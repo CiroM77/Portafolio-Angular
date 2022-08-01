@@ -5,22 +5,20 @@
         <img src="assets\images\perfil.jpg" class="img-fluid" alt="...">
       </div>
       <div class="col-md-6  col-text">
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-          <button class="btn btn-light me-md-2" type="button"><i class="fa-solid fa-pen-to-square"></i></button>
-          <button class="btn btn-light" type="button"><i class="fa-solid fa-trash"></i></button>
-        </div>
+        <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button class="btn btn-light me-md-2" id="btn-edit" type="button"><i class="fa-solid fa-pen-to-square"></i></button>
+          <button class="btn btn-light" id="btn-del" type="button"><i class="fa-solid fa-trash"></i></button>
+        </div> -->
         <div class="card-body">
           <h4 class="card-title"> <i>ACERCA DE MI</i> </h4>
-          <p class="card-text">Soy un alumno avanzado de la Lic. en Fonoaudiología que siempre se apasiono por el mundo IT.
-                               Luego de pasar aprendiendo y practicando por hobby, incursione en el programa "Argentina Programa" para seguir
-                               sumando conocimientos. Hoy me encuentro con ganas de seguir creciendo buscando mis primeras experiencias en este mundo.
+          <p *ngFor = "let portafolio of miPortafolio" class="card-text"> {{portafolio.acercaDeMi}}
           </p>
         </div>
       </div>
       
     </div>
     <div class="row" id="row-btn">
-      <a class="a-cv" href="docs/Curriculum vitae- Ciro Martin (2).pdf" target="_blank">Descargar C.V.</a>
+      <a class="a-cv" href="assets/doc/Curriculum vitae- Ciro Martin.pdf" target="_blank">Descargar C.V.</a>
 
     </div>
     </div> 
